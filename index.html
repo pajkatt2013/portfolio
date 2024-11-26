@@ -420,16 +420,15 @@
           };
 
           // 调用 EmailJS 的 send 方法发送邮件
-          emailjs.send("service_yktjwsc", "template_b2wwmob", formData).then(
-            () => {
+          emailjs
+            .send("service_yktjwsc", "template_b2wwmob", formData)
+            .then(() => {
               alert("Your message has been sent successfully!");
-              document.getElementById("contactForm").reset(); // 重置表单
-            },
-            (error) => {
-              alert("Failed to send your message. Error:${error.text}.");
+            })
+            .catch((error) => {
               console.error("EmailJS Error:", error);
-            }
-          );
+              alert(`Failed to send your message. Error: ${error.text}`);
+            });
         });
     </script>
   </body>
