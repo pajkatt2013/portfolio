@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
+    <title>Terry's portfolio</title>
     <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -15,6 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("TOb9_KyOVBvHV9jKT"); // 替换为 EmailJS 提供的 USER_ID
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -22,12 +28,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
+              src="./assets/png/terry.png"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Terry Yang</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -84,12 +90,10 @@
     </header>
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
+        <h1 class="heading-primary">Hey, My name is Terry</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
+            Data Engineer | AWS Certified | Kubernetes & Python Enthusiast
           </p>
         </div>
         <div class="home-hero__cta">
@@ -115,7 +119,7 @@
             />
           </a>
         </div>
-        <div class="home-hero__social">
+        <!-- <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
               src="./assets/png/twitter-ico.png"
@@ -123,8 +127,8 @@
               class="home-hero__social-icon"
             />
           </a>
-        </div>
-        <div class="home-hero__social">
+        </div> -->
+        <!-- <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
               src="./assets/png/yt-ico.png"
@@ -132,8 +136,8 @@
               class="home-hero__social-icon"
             />
           </a>
-        </div>
-        <div class="home-hero__social">
+        </div> -->
+        <!-- <div class="home-hero__social">
           <a
             href="#"
             class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
@@ -144,7 +148,7 @@
               class="home-hero__social-icon"
             />
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="home-hero__mouse-scroll-cont">
         <div class="mouse"></div>
@@ -165,19 +169,19 @@
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Hey! It's
-                <strong>John Doe</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
+                <strong>Terry Yang</strong>
+                and I'm a <strong> Data Engineer </strong> located in Shanghai.
+                I've done
                 <strong> remote </strong>
                 projects for agencies, consulted for startups, and collaborated
                 with talented people to create
-                <strong>digital products </strong>
+                <strong>data pipelines and solutions </strong>
                 for both business and consumer use.
               </p>
               <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
+                I'm a data engineer skilled in AWS services, Kubernetes, Python,
+                and data modeling. I help businesses turn data into actionable
+                insights and build scalable systems. Feel free to
                 <strong>contact</strong> me here.
               </p>
             </div>
@@ -188,18 +192,15 @@
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Shopify</div>
-              <div class="skills__skill">Wordpress</div>
-              <div class="skills__skill">Google ADS</div>
-              <div class="skills__skill">Facebook Ads</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">IOS</div>
+              <div class="skills__skill">PYTHON</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">Kubernetes</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Kafka</div>
+              <div class="skills__skill">Spark</div>
+              <div class="skills__skill">Flink</div>
+              <div class="skills__skill">Redshift</div>
+              <div class="skills__skill">Glue</div>
             </div>
           </div>
         </div>
@@ -228,9 +229,8 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 1</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                Microservice Architecture and System Design with Python &
+                Kubernetes.
               </p>
               <a
                 href="./project-1.html"
@@ -252,9 +252,8 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 2</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                Real-Time Credit Card Fraud Detection System with Kafka and
+                Flink.
               </p>
               <a
                 href="./project-2.html"
@@ -276,9 +275,8 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 3</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                Serverless Data Pipeline for Real-Time Analytics with AWS Glue,
+                Lambda, and Redshift.
               </p>
               <a
                 href="./project-3.html"
@@ -296,12 +294,12 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Feel free to reach out for collaboration opportunities, project
+            inquiries, or just to say hello!
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form id="contactForm" action="#" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -408,5 +406,31 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // 阻止默认表单提交行为
+
+          // 获取表单数据
+          const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+
+          // 调用 EmailJS 的 send 方法发送邮件
+          emailjs.send("service_yktjwsc", "template_b2wwmob", formData).then(
+            () => {
+              alert("Your message has been sent successfully!");
+              document.getElementById("contactForm").reset(); // 重置表单
+            },
+            (error) => {
+              alert("Failed to send your message. Error:${error.text}.");
+              console.error("EmailJS Error:", error);
+            }
+          );
+        });
+    </script>
   </body>
 </html>
