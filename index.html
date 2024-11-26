@@ -427,7 +427,9 @@
             })
             .catch((error) => {
               console.error("EmailJS Error:", error);
-              alert(`Failed to send your message. Error: ${error.text}`);
+              alert(
+                `Failed to send your message(after i updated cdn). Error: ${error.text}`
+              );
             });
         });
     </script>
